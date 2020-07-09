@@ -14,9 +14,16 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warriorBrian/v-json-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/warriorBrian/v-json-editor/issues"
+  },
+  "homepage": "https://github.com/warriorBrian/v-json-editor#readme",
   "dependencies": {
-    "jsoneditor": "^9.0.3",
-    "vue": "^2.5.11"
+    "jsoneditor": "^9.0.3"
   },
   "browserslist": [
     "> 1%",
