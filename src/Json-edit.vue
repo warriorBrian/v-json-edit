@@ -71,6 +71,15 @@ export default {
     this.initJsonEditor()
     this.expandedAll()
   },
+  watch: {
+    json: {
+      handler (val) {
+        this.editor.set(val)
+        this.expandedAll()
+      },
+      deep: true
+    }
+  },
   methods: {
     initJsonEditor () {
       const _self = this
