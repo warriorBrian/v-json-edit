@@ -1,14 +1,14 @@
 {
   "name": "v-json-edit",
   "description": "vue json editor components",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "src/index.js",
   "author": "Brian",
   "license": "MIT",
   "keywords": [
-    "v-json-editor",
-    "json-editor",
-    "json editor"
+    "v-json-edit",
+    "json edit",
+    "vue json editor"
   ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",

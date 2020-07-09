@@ -1,22 +1,24 @@
-## v-json-editor
+## v-json-edit
 
 ### Install
 
 ```bash
-$ npm install --save v-json-editor
+$ npm install --save v-json-edit
+# or
+$ yarn add v-json-edit
 ```
 
 ### Usage
 
 ```js
 import Vue from 'vue'
-import vJsonEditor from 'v-json-editor'
-Vue.use(vJsonEditor)
+import vJsonEdit from 'v-json-edit'
+Vue.use(vJsonEdit)
 ```
 
 ```html
 <!--开启编辑，拖拽，监听改变-->
-<v-json-editor v-model="json" edit drag @on-change="changeHandle"></v-json-editor>
+<v-json-edit v-model="json" edit drag @on-change="changeHandle"></v-json-edit>
 ```
 
 ```js
