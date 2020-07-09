@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/warriorBrian/v-json-editor.git"
+    "url": "git+https://github.com/warriorBrian/v-json-edit.git"
   },
   "bugs": {
-    "url": "https://github.com/warriorBrian/v-json-editor/issues"
+    "url": "https://github.com/warriorBrian/v-json-edit.git/issues"
   },
-  "homepage": "https://github.com/warriorBrian/v-json-editor#readme",
+  "homepage": "https://github.com/warriorBrian/v-json-edit.git#readme",
   "dependencies": {
     "jsoneditor": "^9.0.3"
   },
