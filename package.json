@@ -1,0 +1,26 @@
+{
+  "name": "v-json-editor",
+  "description": "vue json editor components",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "author": "Brian",
+  "license": "MIT",
+  "keywords": [
+    "v-json-editor",
+    "json-editor",
+    "json editor"
+  ],
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "jsoneditor": "^9.0.3",
+    "vue": "^2.5.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
