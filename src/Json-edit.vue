@@ -8,7 +8,7 @@
 import JsonEditor from 'jsoneditor'
 import 'jsoneditor/dist/jsoneditor.min.css'
 export default {
-  name: 'Json-editor',
+  name: 'Json-edit',
   model: {
     prop: 'json',
     event: 'on-change'

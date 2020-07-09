@@ -1,8 +1,8 @@
-import VJsonEditor from './Json-editor'
+import VJsonEdit from './Json-edit'
 
 const options = {
   install (Vue) {
-    Vue.component('v-json-editor', VJsonEditor)
+    Vue.component('v-json-edit', VJsonEdit)
   }
 }
 

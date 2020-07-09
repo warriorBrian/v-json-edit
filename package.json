@@ -1,7 +1,7 @@
 {
   "name": "v-json-edit",
   "description": "vue json editor components",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "src/index.js",
   "author": "Brian",
   "license": "MIT",
