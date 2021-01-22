@@ -116,7 +116,7 @@ export default {
       if (this.expand && this.expandModes.includes(mode)) {
         this.editor.expandAll()
       } else {
-        this.editor.collapseAll()
+        // this.editor.collapseAll()  这个地方 也没有collapseAll 方法
       }
     }
   },
