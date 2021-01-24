@@ -112,11 +112,14 @@ export default {
       this.editor = new JsonEditor(el, options, this.json)
     },
     expandedAll () {
+      const methodsLists = ['expandAll', 'collapseAll']
+      // mehods is exists?
+      const methodsExist = methodsLists.every(v => v in this.editor)
       const mode = this.editor.getMode()
-      if (this.expand && this.expandModes.includes(mode)) {
-        this.editor.expandAll()
-      } else {
-        this.editor.collapseAll()
+      // is expand all?
+      const isExpand = this.expand && this.expandModes.includes(mode)
+      if (methodsExist) {
+        isExpand ? this.editor.expandAll() : this.editor.collapseAll()
       }
     }
   },
