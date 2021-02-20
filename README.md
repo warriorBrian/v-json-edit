@@ -17,8 +17,8 @@ Vue.use(vJsonEdit)
 ```
 
 ```html
-<!--开启编辑，拖拽，监听改变-->
-<v-json-edit v-model="json" edit drag @on-change="changeHandle"></v-json-edit>
+<!--开启编辑，拖拽，监听改变, 将on-change修改为change防止与系统冲突-->
+<v-json-edit v-model="json" edit drag @change="changeHandle"></v-json-edit>
 ```
 
 ```js
@@ -58,7 +58,7 @@ navigationBar | 显示树结构上当前位置,适用于: tree/form/view模式 |
 
 事件名称 | 说明 | 回调参数
 ---|---|---
-on-change | 当值进行改变时触发 | value
+change | 当值进行改变时触发 | value
 on-mode | 当模式切换时触发 | {newMode, oldMode}
 on-error | 错误时触发 | error
 on-select-text | 当选中数据时触发(仅适用于mode: `code`, 'text') | {start, end, text}

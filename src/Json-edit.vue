@@ -94,7 +94,7 @@ export default {
         search: _self.search,
         onChange () {
           const data = _self.editor.get()
-          _self.$emit('on-change', data)
+          _self.$emit('change', data)
         },
         onModeChange (newMode, oldMode) {
           _self.$emit('on-mode', { newMode, oldMode })
