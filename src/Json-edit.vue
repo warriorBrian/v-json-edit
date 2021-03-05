@@ -93,8 +93,12 @@ export default {
         history: _self.history,
         search: _self.search,
         onChange () {
-          const data = _self.editor.get()
-          _self.$emit('change', data)
+          try {
+            const data = _self.editor.get()
+            _self.$emit('change', data)
+          } catch (e) {
+            _self.$emit('on-error', e)
+          }
         },
         onModeChange (newMode, oldMode) {
           _self.$emit('on-mode', { newMode, oldMode })
